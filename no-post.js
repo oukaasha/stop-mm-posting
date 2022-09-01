@@ -1,6 +1,6 @@
 const noPostUrl = 'jalebi-party';
 
-if (location.href.endsWith(noPostUrl)) {
+if (location.href.includes(noPostUrl)) {
     noPostTrigger();
 }
 
@@ -8,7 +8,7 @@ let url = location.href;
 document.body.addEventListener('click', ()=>{
     requestAnimationFrame(()=>{
       if(url!==location.href){
-        if (location.href.endsWith(noPostUrl)) {
+        if (location.href.includes(noPostUrl)) {
             noPostTrigger();
         }
         url = location.href;
@@ -17,7 +17,7 @@ document.body.addEventListener('click', ()=>{
 }, true);
 
 window.onkeypress = function(event) {
-    if (location.href.endsWith(noPostUrl)) {
+    if (location.href.includes(noPostUrl)) {
         noPostTrigger();
     }
 };
