@@ -2,7 +2,7 @@
   "description": "Write urdu anywhere.",
   "manifest_version": 2,
   "name": "Urdu Writer",
-  "version": "1.0.0.2",
+  "version": "1.0.0.3",
   "icons": {
     "48": "icons/border-48.png"
   },
